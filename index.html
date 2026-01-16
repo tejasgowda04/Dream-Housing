@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* CSS Variables - Brand Colors */
         :root {
@@ -200,7 +199,7 @@
             transform: translateX(0);
         }
 
-        /* Header & Navigation */
+        /* Header & Navigation - UPDATED WITH ROUND LOGO */
         header {
             position: fixed;
             top: 0;
@@ -229,16 +228,24 @@
             color: var(--dark-gray);
         }
 
-        .logo span {
-            color: var(--primary);
+        .logo-img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 12px;
+            background: var(--gradient-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 2px solid var(--secondary);
         }
 
-        .logo .circle {
-            width: 10px;
-            height: 10px;
-            background: var(--secondary);
-            border-radius: 50%;
-            margin-right: 5px;
+        .logo span {
+            color: var(--primary);
         }
 
         .nav-menu {
@@ -516,7 +523,7 @@
             max-height: 500px;
         }
 
-        /* Portfolio Section */
+        /* Portfolio Section - FIXED STRUCTURE */
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -986,15 +993,25 @@
             .sticky-btn .icon {
                 font-size: 1.2rem;
             }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .logo-img {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header - UPDATED WITH ROUND LOGO -->
     <header>
         <div class="header-container">
             <a href="#" class="logo">
-                <div class="circle"></div>
+                <div class="logo-img"><img src="logo.png"></div>
                 Dream<span>Housing</span>
             </a>
             
@@ -1023,7 +1040,7 @@
                 <p>Dream Housing Interiors brings visionary design and meticulous construction together. Led by Sharan Shetty, we transform spaces into personalized luxury experiences in Bangalore.</p>
                 <div class="hero-btns">
                     <a href="#contact" class="btn btn-primary">Book Free Consultation</a>
-                    <a href="https://wa.me/919876543210?text=Hi%20Dream%20Housing%20Interiors,%20I'm%20interested%20in%20your%20design%20services" class="btn btn-secondary" target="_blank">WhatsApp Now</a>
+                    <a href="https://wa.me/917676833296?text=Hi%20Dream%20Housing%20Interiors,%20I'm%20interested%20in%20your%20design%20services" class="btn btn-secondary" target="_blank">WhatsApp Now</a>
                 </div>
             </div>
         </div>
@@ -1160,7 +1177,7 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio Section - FIXED HTML STRUCTURE -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-title text-center">
@@ -1169,11 +1186,10 @@
             </div>
             
             <div class="portfolio-grid">
-                <!-- Portfolio items will be dynamically loaded with images p1.jpg to p10.jpg -->
+                <!-- Project 1 -->
                 <div class="portfolio-item fade-up">
                     <div class="portfolio-img">
-                        <!-- In production, replace with actual images: p1.jpg to p10.jpg -->
-                        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Modern Living Room Design">
+                        <img src="p1.JPG" alt="Modern Interior Design">
                     </div>
                     <div class="portfolio-overlay">
                         <div class="portfolio-overlay-content">
@@ -1183,9 +1199,10 @@
                     </div>
                 </div>
                 
+                <!-- Project 2 -->
                 <div class="portfolio-item fade-up">
                     <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1558&q=80" alt="Luxury Kitchen Design">
+                        <img src="p2.JPG" alt="Luxury Kitchen Design">
                     </div>
                     <div class="portfolio-overlay">
                         <div class="portfolio-overlay-content">
@@ -1195,14 +1212,132 @@
                     </div>
                 </div>
                 
+                <!-- Project 3 -->
                 <div class="portfolio-item fade-up">
                     <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Contemporary Bedroom">
+                        <img src="p3.JPG" alt="Contemporary Bedroom">
                     </div>
                     <div class="portfolio-overlay">
                         <div class="portfolio-overlay-content">
                             <h4>Contemporary Bedroom</h4>
                             <p>Residential Interior</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="portfolio-item fade-up">
+                    <div class="portfolio-img">
+                        <img src="p4.JPG" alt="Premium Interior Design">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h4>Premium Living Space</h4>
+                            <p>Residential Interior</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="portfolio-item fade-up">
+                    <div class="portfolio-img">
+                        <img src="p5.JPG" alt="Modern Kitchen">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h4>Modern Kitchen</h4>
+                            <p>Modular Kitchen</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="portfolio-item fade-up">
+                    <div class="portfolio-img">
+                        <img src="p6.JPG" alt="Designer Bedroom">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h4>Designer Bedroom</h4>
+                            <p>Residential Interior</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="portfolio-item fade-up">
+                    <div class="portfolio-img">
+                        <img src="p7.JPG" alt="Living Area Design">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h4>Elegant Living Area</h4>
+                            <p>Residential Interior</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 8 -->
+                <div class="portfolio-item fade-up">
+                    <div class="portfolio-img">
+                        <img src="p8.JPG" alt="Dining Area">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h4>Modern Dining</h4>
+                            <p>Residential Interior</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 9 -->
+                <div class="portfolio-item fade-up">
+                    <div class="portfolio-img">
+                        <img src="p9.JPG" alt="Interior Design">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h4>Complete Home Interior</h4>
+                            <p>Residential Project</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 10 -->
+                <div class="portfolio-item fade-up">
+                    <div class="portfolio-img">
+                        <img src="p10.JPG" alt="Modern Interior">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h4>Modern Interior</h4>
+                            <p>Residential Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 11 -->
+                <div class="portfolio-item fade-up">
+                    <div class="portfolio-img">
+                        <img src="p11.JPG" alt="Design Project">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h4>Design Project</h4>
+                            <p>Complete Interior</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 12 -->
+                <div class="portfolio-item fade-up">
+                    <div class="portfolio-img">
+                        <img src="p12.JPG" alt="Final Project">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h4>Final Project</h4>
+                            <p>Turnkey Interior</p>
                         </div>
                     </div>
                 </div>
@@ -1314,8 +1449,7 @@
                 
                 <div class="founder-card slide-in-right">
                     <div class="founder-image">
-                        <!-- In production, add founder image here -->
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Sharan Shetty">
+                        <img src="owner.png" alt="Sharan Shetty">
                     </div>
                     <h3 class="text-center">Sharan Shetty</h3>
                     <p class="text-center" style="color: var(--primary); font-weight: 600;">Founder & Lead Designer</p>
@@ -1441,7 +1575,7 @@
                         </div>
                         <div>
                             <h4>Our Studio</h4>
-                            <p>#123, Design Street, Indiranagar<br>Bangalore, Karnataka - 560038</p>
+                            <p>#09, 2nd Floor, Jattappa Complex, JP Nagar Post<br>Kanakapura Main Road Indiranagar, Yalanchenahalli<br>Bangalore, Karnataka - 560078</p>
                         </div>
                     </div>
                     
@@ -1451,7 +1585,7 @@
                         </div>
                         <div>
                             <h4>Call Us</h4>
-                            <p>+91 98765 43210<br>Mon-Sat: 9:00 AM - 7:00 PM</p>
+                            <p>+91 76768 33296<br>+91 91481 70413</p>
                         </div>
                     </div>
                     
@@ -1461,7 +1595,7 @@
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <p>hello@dreamhousinginteriors.com<br>queries@dreamhousinginteriors.com</p>
+                            <p>dreamhousinginteriors@gmail.com</p>
                         </div>
                     </div>
                     
@@ -1529,11 +1663,11 @@
 
     <!-- Sticky Bottom Buttons -->
     <div class="sticky-buttons">
-        <a href="https://wa.me/919876543210?text=Hi%20Dream%20Housing%20Interiors,%20I'm%20interested%20in%20your%20design%20services" class="sticky-btn whatsapp" target="_blank">
+        <a href="https://wa.me/917676833296?text=Hi%20Dream%20Housing%20Interiors,%20I'm%20interested%20in%20your%20design%20services" class="sticky-btn whatsapp" target="_blank">
             <span class="icon"><i class="fab fa-whatsapp"></i></span>
             <span>WhatsApp Now</span>
         </a>
-        <a href="tel:+919876543210" class="sticky-btn call">
+        <a href="tel:+917676833296" class="sticky-btn call">
             <span class="icon"><i class="fas fa-phone"></i></span>
             <span>Call Now</span>
         </a>
@@ -1680,7 +1814,7 @@
             
             const whatsappMessage = `Hello Dream Housing Interiors!%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Service Interested:* ${service}%0A*Message:* ${message}%0A%0AI would like to book a consultation. Please contact me.`;
             
-            const whatsappURL = `https://wa.me/919876543210?text=${whatsappMessage}`;
+            const whatsappURL = `https://wa.me/917676833296?text=${whatsappMessage}`;
             
             window.open(whatsappURL, '_blank');
         }
